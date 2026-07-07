@@ -400,3 +400,21 @@ grid-template-columns:1fr;
 }
 
 }
+
+.music-btn{
+    margin-top:20px;
+    padding:12px 28px;
+    border:none;
+    border-radius:30px;
+    background:#ff4d6d;
+    color:#fff;
+    font-size:16px;
+    font-weight:bold;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+.music-btn:hover{
+    background:#ff1e56;
+    transform:scale(1.05);
+}

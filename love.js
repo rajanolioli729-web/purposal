@@ -253,15 +253,23 @@ h.remove();
 
 
 // ================================
-// Background Music (Autoplay)
+// Background Music
 // ================================
 const music = new Audio("song.mp4");
 music.loop = true;
 music.volume = 0.7;
 
-document.addEventListener("click", () => {
-    music.play();
-}, { once: true });
+const musicBtn = document.getElementById("musicBtn");
+
+musicBtn.addEventListener("click", () => {
+    if (music.paused) {
+        music.play();
+        musicBtn.innerHTML = "🔇 Pause Music";
+    } else {
+        music.pause();
+        musicBtn.innerHTML = "🔊 Play Music";
+    }
+});
 
 // ================================
 // Smooth Scroll

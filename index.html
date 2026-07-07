@@ -11,118 +11,118 @@
 </head>
 <body>
 
-<div id="hearts"></div>
+    <!-- Falling Hearts -->
+    <div id="hearts"></div>
 
-<header class="hero">
+    <!-- Hero Section -->
+    <header class="hero">
 
-    <div class="glass">
+        <div class="glass">
 
-        <h3>❤️ Special For ❤️</h3>
+            <h3>❤️ Special For ❤️</h3>
 
-        <h1 id="typing"></h1>
+            <h1 id="typing"></h1>
 
-        <p>
-            Every heartbeat reminds me of you.
-            <br>
-            Every smile begins with your name.
+            <p>
+                Every heartbeat reminds me of you.
+                <br>
+                Every smile begins with your name.
+                <br><br>
+                You are the most beautiful chapter of my life.
+                <br><br>
+                I don't know what tomorrow brings,
+                but I know I want you beside me.
+                ❤️
+            </p>
+
+            <!-- Continue Button -->
+            <a href="#proposal">
+                <button class="next">
+                    Continue ❤️
+                </button>
+            </a>
+
             <br><br>
-            You are the most beautiful chapter of my life.
-            <br><br>
-            I don't know what tomorrow brings,
-            but I know I want you beside me.
-            ❤️
-        </p>
 
-        <a href="#proposal">
-            <button class="next">
-                Continue ❤️
+            <!-- Music Button -->
+            <button id="musicBtn" class="music-btn">
+                🔊 Play Music
             </button>
-        </a>
+
+        </div>
+
+    </header>
+
+    <!-- Proposal Section -->
+    <section id="proposal" class="proposal">
+
+        <div class="card">
+
+            <h1>💖 Dear Puja 💖</h1>
+
+            <p>
+                Life feels more colorful with you.
+                <br><br>
+
+                Every day I thank destiny for letting me know someone as wonderful as you.
+                <br><br>
+
+                I don't promise a perfect life,
+                but I promise to stand beside you through every happiness and every challenge.
+                <br><br>
+
+                ❤️ Puja,
+                <br><br>
+
+                <strong>Will You Be Mine Forever? ❤️</strong>
+            </p>
+
+            <form action="https://api.web3forms.com/submit" method="POST" id="proposalForm">
+
+                <input type="hidden"
+                       name="access_key"
+                       value="818538c1-c331-421e-8f65-68f1ad75f127">
+
+                <input type="hidden"
+                       name="subject"
+                       value="❤️ Puja Accepted My Proposal">
+
+                <input type="hidden"
+                       name="from_name"
+                       value="Proposal Website">
+
+                <input type="hidden"
+                       name="Answer"
+                       id="answer">
+
+                <button type="button" id="yesBtn">
+                    Yes ❤️
+                </button>
+
+                <button type="button" id="noBtn">
+                    No 🙈
+                </button>
+
+            </form>
+
+        </div>
+
+    </section>
+
+    <!-- Success Message -->
+    <div id="success">
+
+        <h1>
+            💖 Thank You Puja 💖
+        </h1>
+
+        <h2>
+            You Made Me The Happiest Person ❤️
+        </h2>
 
     </div>
 
-</header>
-
-
-
-
-<section id="proposal" class="proposal">
-
-<div class="card">
-
-<h1>💖 Dear Puja 💖</h1>
-
-<p>
-
-Life feels more colorful with you.
-
-Every day I thank destiny for letting me know someone as wonderful as you.
-
-I don't promise a perfect life,
-
-but I promise to stand beside you through every happiness and every challenge.
-
-<br><br>
-
-❤️ Puja,
-
-Will You Be Mine Forever? ❤️
-
-</p>
-
-<form action="https://api.web3forms.com/submit" method="POST" id="proposalForm">
-
-<input type="hidden"
-name="access_key"
-value="818538c1-c331-421e-8f65-68f1ad75f127">
-
-<input type="hidden"
-name="subject"
-value="❤️ Puja Accepted My Proposal">
-
-<input type="hidden"
-name="from_name"
-value="Proposal Website">
-
-<input type="hidden"
-name="Answer"
-id="answer">
-
-<button type="button" id="yesBtn">
-
-Yes ❤️
-
-</button>
-
-<button type="button" id="noBtn">
-
-No 🙈
-
-</button>
-
-</form>
-
-</div>
-
-</section>
-
-<div id="success">
-
-<h1>
-
-💖 Thank You Puja 💖
-
-</h1>
-
-<h2>
-
-You Made Me The Happiest Person ❤️
-
-</h2>
-
-</div>
-
-<script src="love.js"></script>
+    <script src="love.js"></script>
 
 </body>
 </html>
