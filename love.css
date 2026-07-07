@@ -365,6 +365,7 @@ font-size:17px;
 
 }
 
+
 .gallery h2{
 
 font-size:34px;
@@ -401,20 +402,40 @@ grid-template-columns:1fr;
 
 }
 
+/* ================================
+   Music Button
+================================ */
+
 .music-btn{
+    display:inline-block;
     margin-top:20px;
-    padding:12px 28px;
+    padding:14px 32px;
     border:none;
-    border-radius:30px;
-    background:#ff4d6d;
+    border-radius:50px;
+    background:#ff1744;
     color:#fff;
-    font-size:16px;
-    font-weight:bold;
+    font-size:18px;
+    font-weight:600;
     cursor:pointer;
-    transition:0.3s;
+    transition:.3s;
+    box-shadow:0 5px 15px rgba(0,0,0,.2);
 }
 
 .music-btn:hover{
-    background:#ff1e56;
+    background:#e60039;
     transform:scale(1.05);
+}
+
+/* Mobile */
+@media (max-width:768px){
+
+    .music-btn{
+        width:100%;
+        max-width:300px;
+        padding:15px;
+        font-size:18px;
+        display:block;
+        margin:20px auto 0;
+    }
+
 }
