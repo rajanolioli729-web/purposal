@@ -259,13 +259,9 @@ const music = new Audio("song.mp4");
 music.loop = true;
 music.volume = 0.7;
 
-// Try to autoplay when page loads
-window.addEventListener("load", () => {
-    music.play().catch(err => {
-        console.log("Autoplay blocked by browser:", err);
-    });
-});
-
+document.addEventListener("click", () => {
+    music.play();
+}, { once: true });
 
 // ================================
 // Smooth Scroll
