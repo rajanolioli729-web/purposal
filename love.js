@@ -255,7 +255,7 @@ h.remove();
 // ================================
 // Background Music (Autoplay)
 // ================================
-const music = new Audio("mp4.mp4");
+const music = new Audio("song.mp4");
 music.loop = true;
 music.volume = 0.7;
 
